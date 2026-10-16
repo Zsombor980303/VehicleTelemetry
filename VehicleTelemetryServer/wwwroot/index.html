@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Telemetry - Main Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #f1f1f1;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #2d2d2d;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+            border: 1px solid #3e3e3e;
+        }
+
+        h1 {
+            color: #007acc;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+
+        p {
+            color: #aaaaaa;
+            margin-bottom: 30px;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border-radius: 6px;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+        .btn-raw {
+            background-color: #3e3e3e;
+            border: 1px solid #555555;
+        }
+
+            .btn-raw:hover {
+                background-color: #4e4e4e;
+                border-color: #007acc;
+            }
+
+        .btn-failures {
+            background-color: #007acc;
+            border: 1px solid #0062a3;
+        }
+
+            .btn-failures:hover {
+                background-color: #0098ff;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Telemetry Center</h1>
+        <p>Choose what you want to check:</p>
+
+        <div class="button-group">
+            <a href="/vehicletelemetry/raw" class="btn btn-raw">Raw dataflow (JSON)</a>
+            <a href="/failures.html" class="btn btn-failures">Failure & Dashboard</a>
+        </div>
+    </div>
+
+</body>
+</html>

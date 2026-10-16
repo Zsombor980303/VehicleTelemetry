@@ -1,0 +1,70 @@
+[
+    {
+        "brake_name": "Qwp F\u00e9kbet\u00e9t WBP166/SZ",
+        "brake_item_number": "WBP166/SZ",
+        "brake_price": 4267,
+        "brake_system": "AP-Lockheed",
+        "manufacturer": "Qwp"
+    },
+    {
+        "brake_name": "Valeo F\u00e9kbet\u00e9t 598129 VAL/FM",
+        "brake_item_number": "598129 VAL/FM",
+        "brake_price": 5043,
+        "brake_system": "LOCKHEED",
+        "manufacturer": "VALEO"
+    },
+    {
+        "brake_name": "Lpr f\u00e9kbet\u00e9t 05P140 LPR/AF",
+        "brake_item_number": "05P140 LPR/AF",
+        "brake_price": 5224,
+        "brake_system": "AP LOCKHEED",
+        "manufacturer": "LPR"
+    },
+    {
+        "brake_name": "Lpr f\u00e9kbet\u00e9t 05P013 LPR/AF",
+        "brake_item_number": "05P013 LPR/AF",
+        "brake_price": 6086,
+        "brake_system": "AP LOCKHEED",
+        "manufacturer": "LPR"
+    },
+    {
+        "brake_name": "Delphi f\u00e9kbet\u00e9t LP41 DEL/AF",
+        "brake_item_number": "LP41 DEL/AF",
+        "brake_price": 6100,
+        "brake_system": "AP-Lockheed",
+        "manufacturer": "DELPHI"
+    },
+    {
+        "brake_name": "Lpr f\u00e9kbet\u00e9t 05P015 LPR/AF",
+        "brake_item_number": "05P015 LPR/AF",
+        "brake_price": 6252,
+        "brake_system": "BREMBO",
+        "manufacturer": "LPR"
+    },
+    {
+        "brake_name": "LP580 DEL/AF Delphi",
+        "brake_item_number": "LP580 DEL/AF",
+        "brake_price": 8384,
+        "brake_system": "Brembo",
+        "manufacturer": "DELPHI"
+    },
+    {
+        "brake_name": "16311 FEB/AF Febi",
+        "brake_item_number": "16311 FEB/AF",
+        "brake_price": 8412,
+        "brake_system": "A.P.Lockheed",
+        "manufacturer": "FEBI BILSTEIN"
+    },
+    {
+        "brake_name": "Dt F\u00e9kbet\u00e9t 7.92627 DT/LA",
+        "brake_item_number": "7.92627 DT/LA",
+        "brake_price": 8541,
+        "manufacturer": "DT Spare Parts"
+    },
+    {
+        "brake_name": "Trw f\u00e9kbet\u00e9t k\u00e9szlet, t\u00e1rcsaf\u00e9k GDB779 TRW/JS",
+        "brake_item_number": "GDB779 TRW/JS",
+        "brake_price": 9350,
+        "manufacturer": "TRW"
+    }
+]

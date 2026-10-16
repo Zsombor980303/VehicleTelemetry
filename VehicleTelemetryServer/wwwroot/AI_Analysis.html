@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Telemetry - AI Analysis</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1e1e1e;
+            color: #f1f1f1;
+            margin: 30px;
+        }
+
+        .nav-bar {
+            background-color: #2d2d2d;
+            padding: 15px 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #3e3e3e;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+            border-radius: 4px;
+            background-color: #3e3e3e;
+            border: 1px solid #555555;
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+
+            .btn:hover {
+                background-color: #4e4e4e;
+                border-color: #007acc;
+            }
+
+        h1 {
+            color: #007acc;
+            font-size: 26px;
+            margin-bottom: 25px;
+        }
+
+        .content-box {
+            background-color: #2d2d2d;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #3e3e3e;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            line-height: 1.6;
+            font-size: 16px;
+            white-space: pre-wrap; /* Preserves line breaks from Gemini Markdown response */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-bar">
+        <a href="/failures.html" class="btn">⬅ Back to Failures</a>
+    </div>
+
+    <h1>AI Engineer Analysis</h1>
+
+    <!-- The text container where the clean Gemini response will be injected -->
+    <div id="content" class="content-box">Loading AI Analysis, please wait...</div>
+
+    <script>
+                async function fetchAI() {
+                    try {
+                        const controller = new AbortController();
+                        setTimeout(() => controller.abort(), 240000);
+                        const response = await fetch('/vehicletelemetry/AI_Analysis', { signal: controller.signal });
+                        const data = await response.json();
+                        const AIResponse = document.getElementById('content');
+                        if (AIResponse && data && data.Analysis) {
+                            AIResponse.innerText = data.Analysis;
+                        }
+                    } catch (error) {
+                        console.error("Error loading AI content:", error);
+                        const AIResponse = document.getElementById('content');
+                        if (AIResponse) {
+                            AIResponse.innerText = "Hiba történt az AI elemzés betöltése közben.";
+                        }
+                    }
+                }
+
+                fetchAI();
+    </script>
+</body>
+</html>
