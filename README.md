@@ -41,6 +41,7 @@ A data table reading structured metrics directly from SQL Server, displaying sum
 The interface displaying text blocks processed by Gemini, bypassing raw JSON formatting through custom injection scripts.
 
 ![AI Engineering Analysis](VehicleTelemetryServer/images/AI_page.png)
+![AI Engineering Analysis](VehicleTelemetryServer/images/AI_Analysis.png)
 ![Python Streamlit Dashboard](VehicleTelemetryServer/images/Python_visualisation.png)
 
 
