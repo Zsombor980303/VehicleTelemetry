@@ -40,5 +40,9 @@ A data table reading structured metrics directly from SQL Server, displaying sum
 ### 3. Automated Engineering Report
 The interface displaying text blocks processed by Gemini, bypassing raw JSON formatting through custom injection scripts.
 
+![AI Engineering Analysis](VehicleTelemetryServer/images/AI_page.png)
+
 ### 4. Interactive Analytical Dashboard
 The standalone Python web node handling structured analytics. Uses backend queries to map mechanical overheating alongside sensor issues without accuracy loss.
+
+![Python Streamlit Dashboard](VehicleTelemetryServer/images/Python_visualisation.png)
