@@ -41,8 +41,43 @@ A data table reading structured metrics directly from SQL Server, displaying sum
 The interface displaying text blocks processed by Gemini, bypassing raw JSON formatting through custom injection scripts.
 
 ![AI Engineering Analysis](VehicleTelemetryServer/images/AI_page.png)
+![Python Streamlit Dashboard](VehicleTelemetryServer/images/Python_visualisation.png)
+
+
+## Getting Started & Prerequisites
+
+To run this project locally, you need to set up both the .NET backend and the Python scripts.
+
+### 1. Backend Setup (.NET & SQL Server)
+- Open the `VehicleTelemetryServer.sln` file in Visual Studio.
+- Ensure you have **Microsoft SQL Server** running locally.
+- Open the Package Manager Console or terminal and apply the database migrations:
+  ```shell
+  Update-Database
+  ```
+- Open `VehicleTelemetryServer/appsettings.json` and replace the placeholder with your actual Google Gemini API key:
+  ```json
+  "GeminiApiKey": "YOUR_ACTUAL_API_KEY_HERE"
+  ```
+- Press the **Start/Play** button in Visual Studio to fire up the C# web server on `https://localhost:7196`.
+
+### 2. Python Setup (Simulator & Dashboard)
+Before running the scripts, make sure you install the required packages. You can create a file named `requirements.txt` with the following contents:
+requests
+pandas
+matplotlib
+streamlit
+beautifulsoup4
+
+Install the dependencies using pip:
+pip install -r requirements.txt
+
+
+- **To run the live highway simulator:** Open your terminal and run the simulator script to start pushing live telemetric data stream to the backend:
+  python VehicleTelemetryServer/simulator.py
+
+- **To launch the analytical web interface:** Start the Streamlit application using the command below (it will automatically open `http://localhost:8501` in your browser):
+  streamlit run VehicleTelemetryServer/dashboard.py
 
 ### 4. Interactive Analytical Dashboard
 The standalone Python web node handling structured analytics. Uses backend queries to map mechanical overheating alongside sensor issues without accuracy loss.
-
-![Python Streamlit Dashboard](VehicleTelemetryServer/images/Python_visualisation.png)
